@@ -1,0 +1,26 @@
+/* ProjectList.css */
+.project-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three equal columns */
+    gap: 16px; /* Space between items */
+  }
+  
+  .project-item {
+    border: 1px solid #ccc; /* Optional: for visual separation */
+    padding: 16px;
+    border-radius: 4px;
+    background-color: #f9f9f9; /* Optional: background color */
+  }
+  
+  @media (max-width: 768px) {
+    .project-list {
+      grid-template-columns: repeat(2, 1fr); /* Two columns on medium screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .project-list {
+      grid-template-columns: 1fr; /* One column on small screens */
+    }
+  }
+  
